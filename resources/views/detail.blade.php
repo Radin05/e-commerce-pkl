@@ -59,17 +59,17 @@
                                     <div class="product-content">
                                         <p>{{$produk->deskripsi}}</p>
                                     </div><!-- End .product-content -->
-                                     <form id="tambahKeranjang" action="{{ route('keranjang.add', $produk->id)}}" method="POST">
+                                     <form action="{{ route('keranjang.add', $produk->id)}}" method="POST">
                                     @csrf
                                     <div class="details-filter-row details-row-size">
-                                        <label for="qty">Qty:</label>
+                                        <label for="jumlah">jumlah:</label>
                                         <div class="product-details-quantity">
-                                            <input type="number" id="qty" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
+                                            <input type="number" id="jumlah" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
                                         </div><!-- End .product-details-quantity -->
                                     </div><!-- End .details-filter-row -->
                                     @auth
-                                        <a onclick="event.preventDefault(); document.getElementById('tambahKeranjang').submit();"
-                                    class="add-to-cart button m-0 float-end">Masukan keranjang</a>
+                                         <input type="hidden" name="jumlah" value="1"> {{--jumlah wak--}} {{--anomali pernah kesini--}}
+                                    <button class="btn-product"><span>Tambah ke Keranjang</span></button>
                                     @endauth
                                     </form>
 

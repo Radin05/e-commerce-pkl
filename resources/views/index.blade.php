@@ -58,7 +58,7 @@
                          @foreach ($kategori as $item)
                         <div class="col-md-10 col-lg-4">
                             <div class="banner banner-large banner-overlay banner-overlay-light">
-                                <a href="#">
+                                <a href="{{ url('produk/kategori/' . $item->id) }}">
                                     <img src="{{asset('/images/kategori/' . $item->gambar_kategori)}}" alt="Banner">
                                 </a>
 
@@ -66,7 +66,7 @@
                                     <h4 class="banner-subtitle">{{$item->keterangan}}</h4><!-- End .banner-subtitle -->
                                     <h3 class="banner-title">{{$item->nama_kategori}}</h3><!-- End .banner-title -->
                                     <div class="banner-text">from $19.99</div><!-- End .banner-text -->
-                                    <a href="#" class="btn btn-outline-gray banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                                    <a href="{{ url('produk/kategori/' . $item->id) }}" class="btn btn-outline-gray banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
                                 </div><!-- End .banner-content -->
                             </div><!-- End .banner -->
                         </div>

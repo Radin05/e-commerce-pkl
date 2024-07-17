@@ -42,6 +42,7 @@
                                 }
                             }'>
 
+                    
                      @foreach ($produk as $item)
                          <div class="product product-11 text-start mt-5">
                              <figure class="product-media">
@@ -136,102 +137,6 @@
                                     }
                                 }
                             }'>
-                     <div class="product product-11 text-center">
-                         <figure class="product-media">
-                             <a href="product.html">
-                                 <img src="assets/images/demos/demo-2/products/product-2-1.jpg" alt="Product image"
-                                     class="product-image">
-                                 <img src="assets/images/demos/demo-2/products/product-2-2.jpg" alt="Product image"
-                                     class="product-image-hover">
-                             </a>
-
-                             <div class="product-action-vertical">
-                                 <a href="#" class="btn-product-icon btn-wishlist"><span>add to wishlist</span></a>
-                             </div><!-- End .product-action-vertical -->
-                         </figure><!-- End .product-media -->
-
-                         <div class="product-body">
-                             <h3 class="product-title"><a href="product.html">Octo 4240</a></h3>
-                             <!-- End .product-title -->
-                             <div class="product-price">
-                                 $746,00
-                             </div><!-- End .product-price -->
-
-                             <div class="product-nav product-nav-dots">
-                                 <a href="#" class="active" style="background: #1f1e18;"><span
-                                         class="sr-only">Color name</span></a>
-                                 <a href="#" style="background: #e8e8e8;"><span class="sr-only">Color
-                                         name</span></a>
-                             </div><!-- End .product-nav -->
-                         </div><!-- End .product-body -->
-                         <div class="product-action">
-                             <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
-                         </div><!-- End .product-action -->
-                     </div><!-- End .product -->
-
-                     <div class="product product-11 text-center">
-                         <figure class="product-media">
-                             <span class="product-label label-circle label-new">New</span>
-                             <a href="product.html">
-                                 <img src="assets/images/demos/demo-2/products/product-3-1.jpg" alt="Product image"
-                                     class="product-image">
-                                 <img src="assets/images/demos/demo-2/products/product-3-2.jpg" alt="Product image"
-                                     class="product-image-hover">
-                             </a>
-
-                             <div class="product-action-vertical">
-                                 <a href="#" class="btn-product-icon btn-wishlist"><span>add to wishlist</span></a>
-                             </div><!-- End .product-action-vertical -->
-
-                         </figure><!-- End .product-media -->
-
-                         <div class="product-body">
-                             <h3 class="product-title"><a href="product.html">Flow Slim Armchair</a></h3>
-                             <!-- End .product-title -->
-                             <div class="product-price">
-                                 $970,00
-                             </div><!-- End .product-price -->
-                         </div><!-- End .product-body -->
-                         <div class="product-action">
-                             <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
-                         </div><!-- End .product-action -->
-                     </div><!-- End .product -->
-
-                     <div class="product product-11 text-center">
-                         <figure class="product-media">
-                             <span class="product-label label-circle label-sale">Sale</span>
-                             <a href="product.html">
-                                 <img src="assets/images/demos/demo-2/products/product-4-1.jpg" alt="Product image"
-                                     class="product-image">
-                                 <img src="assets/images/demos/demo-2/products/product-4-2.jpg" alt="Product image"
-                                     class="product-image-hover">
-                             </a>
-
-                             <div class="product-action-vertical">
-                                 <a href="#" class="btn-product-icon btn-wishlist"><span>add to wishlist</span></a>
-                             </div><!-- End .product-action-vertical -->
-
-                         </figure><!-- End .product-media -->
-
-                         <div class="product-body">
-                             <h3 class="product-title"><a href="product.html">Roots Sofa Bed</a></h3>
-                             <!-- End .product-title -->
-                             <div class="product-price">
-                                 <span class="new-price">$337,00</span>
-                                 <span class="old-price">Was $449,00</span>
-                             </div><!-- End .product-price -->
-
-                             <div class="product-nav product-nav-dots">
-                                 <a href="#" class="active" style="background: #878883;"><span
-                                         class="sr-only">Color name</span></a>
-                                 <a href="#" style="background: #dfd5c2;"><span class="sr-only">Color
-                                         name</span></a>
-                             </div><!-- End .product-nav -->
-                         </div><!-- End .product-body -->
-                         <div class="product-action">
-                             <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
-                         </div><!-- End .product-action -->
-                     </div><!-- End .product -->
                  </div><!-- End .owl-carousel -->
              </div><!-- .End .tab-pane -->
          </div><!-- End .tab-content -->

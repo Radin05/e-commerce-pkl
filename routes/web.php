@@ -46,6 +46,10 @@ Route::post('/keranjang/update/{id}', [KeranjangController::class, 'update'])->n
 Route::delete('/keranjang/delete/{id}', [KeranjangController::class, 'delete'])->name('keranjang.delete');
 Route::delete('/keranjang/clear', [KeranjangController::class, 'clear'])->name('keranjang.clear');
 
+Route::get('about', function () {
+    $kategori = Kategori::all();
+    return view('about', compact('kategori'));
+});
 
 
 // Route::middleware(['auth'])->group(function () {
@@ -89,18 +93,14 @@ Route::get('index', function () {
 // });
 // Route::post('/cart/store', [KeranjangController::class, 'store'])->name('keranjang.store');
 
-Route::get('produk/{id}', [ProdukController::class, 'getProdukById']);
+// Route::get('produk/{id}', [ProdukController::class, 'getProdukById']);
 
-Route::get('detail', function () {
-    $kategori = Kategori::all();
-    $produk = Produk::all();
-    return view('detail', compact('kategori', 'produk'));
-});
+// Route::get('detail', function () {
+//     $kategori = Kategori::all();
+//     $produk = Produk::all();
+//     return view('detail', compact('kategori', 'produk'));
+// });
 
-Route::get('about', function () {
-    $kategori = Kategori::all();
-    return view('about', compact('kategori'));
-});
 
 // Route::get('cart', function () {
 //     $kategori = Kategori::all();
@@ -122,15 +122,15 @@ Route::get('profile', function () {
 });
 
 
-Route::get('/pp', function () {
-    return view('layouts.app');
-});
+// Route::get('/pp', function () {
+//     return view('layouts.app');
+// });
 
-Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
-    Route::resource('kategori', KategoriController::class);
-    Route::resource('produk', ProdukController::class);
-    Route::resource('user', UserController::class);
-    Route::resource('home', HomeController::class);
-});
+// Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+//     Route::resource('kategori', KategoriController::class);
+//     Route::resource('produk', ProdukController::class);
+//     Route::resource('user', UserController::class);
+//     Route::resource('home', HomeController::class);
+// });
 
 // Route::get('admin/user', [UserController::class, 'show'])->name('user.show');

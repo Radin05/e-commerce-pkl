@@ -32,7 +32,7 @@ class FrontController extends Controller
     {
         $kategori = Kategori::all();
         $produk = Produk::where('id_kategori', $id)->get();
-        return view('shop', compact('produk', 'kategori'));
+        return view('produk', compact('produk', 'kategori'));
     }
 
     public function produk()
@@ -53,12 +53,12 @@ class FrontController extends Controller
         return view('order', compact('kategori'));
     }
 
-    public function shop()
-    {
-        $kategori = Kategori::all();
-        $produk = Produk::all();
-        return view('shop', compact('produk', 'kategori'));
-    }
+    // public function produk()
+    // {
+    //     $kategori = Kategori::all();
+    //     $produk = Produk::all();
+    //     return view('produk', compact('produk', 'kategori'));
+    // }
 
     //detail-shop
     public function detail($id)
